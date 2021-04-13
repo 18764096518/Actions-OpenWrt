@@ -11,7 +11,7 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/10.10.10.6/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.0.0.1/g' package/base-files/files/bin/config_generate
 
  
 #'删除argon主题，并拉最新版'
@@ -32,6 +32,6 @@ EOF
 
 
 #'设置默认主题'
-default_theme='atmaterial'	
+default_theme='edge'	
 sed -i "s/bootstrap/$default_theme/g" feeds/luci/modules/luci-base/root/etc/config/luci
 
